@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "651ffeca5c12c3373c1911ba"
+  },
+  "name": "maria",
+  "pass": "123"
+},
+{
+  "_id": {
+    "$oid": "651ffeea5c12c3373c1911bc"
+  },
+  "name": "carla",
+  "pass": "123"
+},
+{
+  "_id": {
+    "$oid": "651fff255c12c3373c1911be"
+  },
+  "name": "cat",
+  "pass": "123"
+}]
