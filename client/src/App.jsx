@@ -16,11 +16,13 @@ function App() {
       password: password,
     };
 
+    console.log(postData); //  esta línea para comprobar el objeto que se envía al backend
+
     axios
-      .post("/api/login", postData) // esto es una peticion POST a la ruta /api/login (ver server.js)
+      .post("/api/login", postData)
       .then((res) => {
-        if (res.data.message === "Login successful") {
-          // si el login fue exitoso, navega a la ruta /bloc (ver main.jsx)
+        console.log(res.data.message); // esta línea para comprobar la respuesta del backend
+        if (res.data.message === "Logged in succesfully") {
           navigate("/bloc");
         } else {
           alert("Invalid credentials");
